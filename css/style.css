@@ -21383,25 +21383,9 @@ border-radius:20px 0 0 20px;
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-/* circle */
-.circular-text {
-  position: absolute;
-  top: 13%;
-  left: 8%;
-  font-size: clamp(16px, 2vw, 20px); /* Responsive font size */
-  font-weight: bolder;
-  transition: 0.5s ease-out;
-  z-index: -1;
-}
 
-ion-icon {
-  position: sticky;
-  top: 20%;
-  right: 10%;
-  font-size: clamp(20px, 3vw, 30px); /* Responsive icon size */
-  color: #000;
-}
 /*  */
+
 .shadow-effect {
   background: #fff;
   padding: 20px;
@@ -21410,6 +21394,8 @@ ion-icon {
 border:1px solid #ECECEC;
   box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.05);
   border-radius: 20px;
+   width: auto;
+  height: auto;
 }
 #customers-testimonials .shadow-effect p {
   font-family: inherit;
@@ -21439,6 +21425,37 @@ border:1px solid #ECECEC;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+@media  screen and (max-width:768px) {
+  #customers-testimonials .item,.testi {
+    padding: 0px !important;
+  }
+  .achievement-item{
+    width: 100%;
+  }
+  .achievement-item p,.achievement-item .achievement-count{
+    padding: 14px 0px;
+  }
+  .achievement-item p{
+    font-size: 45px;
+  }
+  .achievement-item img{
+    width: 70px;
+    height: 90px;
+  }
+  .form-footer {
+    margin-top: 7px;
+  }
+  .achievement-count{
+    font-size: 10px;
+  }
+  .cirbutton{
+    display: none;
+  }
+  .play-now {
+  display: none;
+  }
+
 }
 #customers-testimonials .owl-item.active.center .item {
   opacity: 1;
@@ -21492,7 +21509,6 @@ padding: 50px 0;
   border: 2px solid #fff;
   border-radius: 5px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(127, 102, 74, 0.4);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(5.5px);
@@ -21501,6 +21517,7 @@ padding: 50px 0;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  background: linear-gradient(180deg, rgba(var(--primary-color-rgb),0.4)0%, rgba(var(--primary-color-rgb),0.4) 100%); 
 }
 .location-detail:hover {
   transform: translateY(-20px); /* Lifts the item up slightly */
@@ -21550,6 +21567,7 @@ padding: 50px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+
 .form-footer .btn{
   /* border-radius: 10px;  */
   padding: 5px 15px;
@@ -21716,14 +21734,98 @@ textarea.form-control {
     outline: 0;
     box-shadow: none
 }
-.testbtn{
-  display: inline-flex;
+/* play now */
+.play-now {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 9%;
+  top: 9%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.play-now text {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  fill: #080808;
+}
+
+.play-now svg {
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ /* @media (max-width:900px){
+  .testbtn{
+    display: none;
+  }
+}  */
+
+/* CIRCLE BUTTON */
+.text-center .circle-button {
+  margin: 0 auto;
+}
+
+
+.circle-button {
+  width: 114px;
+  height: 114px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(at 100% 100%, rgba(129,104,206,1)20%,rgba(127, 102, 74, 0.6)100%);
-  /* background-color: #000; */
-  box-shadow: 4px 4px 20px 4px rgba(127, 102, 74, 0.6);
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
+  position: relative;
+  border: 1px solid #080808;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 200px;
+  font-weight: 500;
+  scale: 0.8;
+  transition: all 0.6s ease;
 }
+@media  screen and (max-width:1000px) {
+  .circle-button{
+    margin-left:100px;
+
+  }
+}
+.circle-button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  border: 1px solid #080808;
+  border-radius: 50%;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -ms-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+.circle-button:hover {
+  text-decoration: none;
+  scale: 1;
+}
+.circle-button:hover:before {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  
+}
+
+/* IMAGE BOX */
