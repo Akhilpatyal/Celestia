@@ -21241,6 +21241,11 @@ border-radius:20px 0 0 20px;
 /* custom */
 #section-rooms img{
   height: 70vh;
+  border-radius: 5%;
+}
+#ongoing-rooms img{
+  height: 70vh;
+  border-radius: 5%;
 }
 
 
@@ -21844,3 +21849,4 @@ textarea.form-control {
   -webkit-tap-highlight-color: transparent;
   display: none;
 }
+#ongoing-rooms .hover:hover .hover-op-1,#section-rooms .hover:hover .hover-op-1{ opacity:0.8 }
