@@ -285,7 +285,7 @@ header.autoshow {
   top: -120px;
   height: 70px !important;
 }
-
+/* 
 header.autoshow.scrollOn,
 header.autoshow.scrollOff {
   -o-transition: .5s;
@@ -303,7 +303,7 @@ header.autoshow.scrollOn {
 header.autoshow.scrollOff {
   opacity: 1;
   top: -120px;
-}
+} */
 
 header div#logo {
   color: white;
@@ -21526,7 +21526,7 @@ padding: 50px 0;
   background: linear-gradient(180deg, rgba(var(--primary-color-rgb),0.4)0%, rgba(var(--primary-color-rgb),0.4) 100%); 
 }
 .location-detail:hover {
-  transform: translateY(-20px); /* Lifts the item up slightly */
+  transform: translateY(-25px); /* Lifts the item up slightly */
   box-shadow: 0 16px 32px rgba(127, 102, 74, 0.6); /* Increases shadow for depth */
 }
 
@@ -21548,6 +21548,7 @@ padding: 50px 0;
 
 .location-item p {
     margin: 0;
+    font-weight: 500;
     font-size: 14px;
     color: #fff;
 }
@@ -21850,3 +21851,12 @@ textarea.form-control {
   display: none;
 }
 #ongoing-rooms .hover:hover .hover-op-1,#section-rooms .hover:hover .hover-op-1{ opacity:0.8 }
+@media only screen and (max-width: 992px) {
+  header.header-mobile #mainmenu {
+      width: 100%;
+      padding-right: 0px;
+      position: absolute;
+      text-align: center;
+  }
+}
+
