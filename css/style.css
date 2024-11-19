@@ -13495,7 +13495,9 @@ p.slider-teaser{
   width: 100%;
   height: 100%;
   background: none;
+
 }
+
 
 .swiper-slide-active .subtitle {
   animation-delay: 0s;
@@ -21242,12 +21244,12 @@ border-radius:20px 0 0 20px;
 #section-rooms img{
   height: 70vh;
   border-radius: 5%;
-  object-fit: cover;
+  object-position: center;
 }
 #ongoing-rooms img{
   height: 70vh;
   border-radius: 5%; 
-  object-fit: cover;
+  object-position: center;
 }
 
 
@@ -21840,6 +21842,11 @@ textarea.form-control {
   aspect-ratio: 10 / 10;
   object-fit: fill;
   image-rendering: pixelated;
+}
+@media screen and (max-width:730px) {
+  .img-height{
+    aspect-ratio: 6/7;
+  }
 }
 .borR-20{
   border-radius: 20px;
