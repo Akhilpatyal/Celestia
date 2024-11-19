@@ -21836,13 +21836,15 @@ textarea.form-control {
 }
 /* 2nd section images height */
 .img-height{
-  width: 100%;
-  height: 70vh!important;
-  object-fit: cover;
+  /* height: !important; */
+  aspect-ratio: 10 / 10;
+  object-fit: fill;
+  image-rendering: pixelated;
 }
 @media (max-width: 768px) {
   .img-height {
-      height: auto; /* Adjusts height automatically for smaller screens */
+    image-rendering: pixelated;
+    object-fit: fill; /* Adjusts height automatically for smaller screens */
   }
 }
 #featureProject .item img {
