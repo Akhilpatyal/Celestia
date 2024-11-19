@@ -285,7 +285,7 @@ header.autoshow {
   top: -120px;
   height: 70px !important;
 }
-
+/* 
 header.autoshow.scrollOn,
 header.autoshow.scrollOff {
   -o-transition: .5s;
@@ -303,7 +303,7 @@ header.autoshow.scrollOn {
 header.autoshow.scrollOff {
   opacity: 1;
   top: -120px;
-}
+} */
 
 header div#logo {
   color: white;
@@ -2097,6 +2097,7 @@ header.header-light .logo-2 {
 #topbar:not(.topbar-noborder) .tb-light .topbar-left span:first-child {
   border-left: solid 1px rgba(0, 0, 0, .1);
 }
+
 
 .h-phone {
   text-align: center;
@@ -21240,6 +21241,11 @@ border-radius:20px 0 0 20px;
 /* custom */
 #section-rooms img{
   height: 70vh;
+  border-radius: 5%;
+}
+#ongoing-rooms img{
+  height: 70vh;
+  border-radius: 5%;
 }
 
 
@@ -21520,7 +21526,7 @@ padding: 50px 0;
   background: linear-gradient(180deg, rgba(var(--primary-color-rgb),0.4)0%, rgba(var(--primary-color-rgb),0.4) 100%); 
 }
 .location-detail:hover {
-  transform: translateY(-20px); /* Lifts the item up slightly */
+  transform: translateY(-25px); /* Lifts the item up slightly */
   box-shadow: 0 16px 32px rgba(127, 102, 74, 0.6); /* Increases shadow for depth */
 }
 
@@ -21542,6 +21548,7 @@ padding: 50px 0;
 
 .location-item p {
     margin: 0;
+    font-weight: 500;
     font-size: 14px;
     color: #fff;
 }
@@ -21827,5 +21834,35 @@ textarea.form-control {
   opacity: 0;
   
 }
+/* 2nd section images height */
+.img-height{
+  width: 100%;
+  height: 70vh!important;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .img-height {
+      height: auto; /* Adjusts height automatically for smaller screens */
+  }
+}
+#featureProject .item img {
+  height: 65vh; /* Set the height to 70% of the viewport */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+  object-position: center;
+  max-width: 100vw !important; /* Make sure the width fills the container */
+}
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+#ongoing-rooms .hover:hover .hover-op-1,#section-rooms .hover:hover .hover-op-1{ opacity:0.8 }
+@media only screen and (max-width: 992px) {
+  header.header-mobile #mainmenu {
+      width: 100%;
+      padding-right: 0px;
+      position: absolute;
+      text-align: center;
+  }
+}
 
-/* IMAGE BOX */
