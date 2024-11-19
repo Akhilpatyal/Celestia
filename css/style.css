@@ -21866,3 +21866,31 @@ textarea.form-control {
   }
 }
 
+<<<<<<< HEAD
+=======
+.img-height{
+  height: 70vh!important;
+  /* border-radius: 10px; */
+}
+#featureProject .item img {
+  height: 65vh; /* Set the height to 70% of the viewport */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+  object-position: center;
+  max-width: 100vw !important; /* Make sure the width fills the container */
+}
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+#ongoing-rooms .hover:hover .hover-op-1,#section-rooms .hover:hover .hover-op-1{ opacity:0.8 }
+@media only screen and (max-width: 992px) {
+  header.header-mobile #mainmenu {
+      width: 100%;
+      padding-right: 0px;
+      position: absolute;
+      text-align: center;
+  }
+}
+
+>>>>>>> 63859f9043d6767dbd5a0ecd668382d8562cb3df
