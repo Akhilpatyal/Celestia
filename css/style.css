@@ -21843,7 +21843,7 @@ textarea.form-control {
 /* 2nd section images height */
 .img-height{
   /* height: !important; */
-  aspect-ratio: 10 / 10;
+  aspect-ratio: 8.5 / 10;
   object-fit: fill;
   image-rendering: pixelated;
 }
