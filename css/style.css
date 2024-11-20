@@ -1235,6 +1235,7 @@ header.header-light #mainmenu a {
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
+  
 }
 
 .menu-col li a.active,
@@ -4286,8 +4287,8 @@ a.btn-lg{
   margin: 0;
   padding: 0;
   margin-bottom: 0px;
-  line-height: 1em;x
-  letter-spacing: -.5px;
+  line-height: 1em;
+  letter-spacing:.5px;
 }
 
 
@@ -20313,6 +20314,7 @@ border-radius:20px 0 0 20px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size:25px;
   }
 
   header.header-light.header-mobile #mainmenu a.menu-item{
@@ -21576,7 +21578,9 @@ padding: 50px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-
+.p-color{
+  color: #a28261;
+}
 .form-footer .btn{
   /* border-radius: 10px;  */
   padding: 5px 15px;
@@ -21873,3 +21877,36 @@ textarea.form-control {
   }
 }
 
+/* location page */
+.pcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pcon .pagination {
+  position: relative;
+  height: 60px;
+  background: rgba(0, 0,0,0.88);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+  border-radius: 4px;
+}
+.pcon .pagination li {
+  list-style-type: none;
+  display: inline-block;
+}
+.pcon .pagination li a {
+  position: relative;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+.pcon .pagination li a:hover,
+.pcon .pagination li.active a {
+  background: rgba(255, 255, 255, 0.2);
+}
