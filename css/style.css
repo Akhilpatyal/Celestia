@@ -9673,6 +9673,11 @@ h4.de-timeline-year {
   top: 50%;
   transform: translateY(-50%);
 }
+.abs-end{
+  top: 80%;
+  transform: translateY(-80%);
+  
+}
 
 .abs-centered{
   position: absolute;
@@ -13209,6 +13214,8 @@ i.bg-color-secondary {
 .hover:hover .hover-scale-1-1{transform: scale(1.1);}
 .hover:hover .hover-scale-1-2{transform: scale(1.2);}
 .hover-scale-in-3{transform: scale(3); opacity: 0}
+.hover-scale-in-2{transform: scale(1.8); opacity: 0}
+.hover:hover .hover-scale-in-2{transform: scale(1); opacity: 1}
 .hover:hover .hover-scale-in-3{transform: scale(1); opacity: 1}
 .hover:hover .hover-bg-color{background: var(--primary-color)}
 .hover:hover .hover-bg-dark{background: var(--title-font-color)}
