@@ -21880,7 +21880,6 @@ textarea.form-control {
 @media only screen and (max-width: 992px) {
   header.header-mobile #mainmenu {
       width: 100%;
-      padding-right: 0px;
       position: absolute;
       text-align: center;
   }
