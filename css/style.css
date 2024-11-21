@@ -1614,7 +1614,7 @@ section.no-bg,
   background: none !important;
 }
 
-section.lines-deco:before{
+/* section.lines-deco:before{
   content: '';
   top:0;
   height: 100%;
@@ -1630,7 +1630,7 @@ section.lines-deco:after{
   position: absolute;
   border-left: solid 1px rgba(0, 0, 0, .15);
   right: 17.5%;
-}
+} */
 
 section.text-light.lines-deco:before{
   border-left: solid 1px rgba(255, 255, 255, .25);
