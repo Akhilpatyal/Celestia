@@ -1600,9 +1600,11 @@ header.header-mobile.header-center #logo-center{
 /* ================================================== */
 
 section {
-  padding: 140px 0 140px 0;
+  padding: 140px 0 0px 0;
 }
-
+#section-rooms{
+  padding-top: 20px!important;
+}
 #content.zebra section:nth-child(even) {
   background: #fcfcfc;
 }
@@ -1632,13 +1634,13 @@ section.lines-deco:after{
   right: 17.5%;
 } */
 
-section.text-light.lines-deco:before{
+/* section.text-light.lines-deco:before{
   border-left: solid 1px rgba(255, 255, 255, .25);
 }
 
 section.text-light.lines-deco:after{
   border-left: solid 1px rgba(255, 255, 255, .25);
-}
+} */
 
 .bottom-rounded{
   overflow: hidden;
@@ -21916,4 +21918,13 @@ textarea.form-control {
 .pcon .pagination li a:hover,
 .pcon .pagination li.active a {
   background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* our mission */
+
+@keyframes floatAnimation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); } /* Float upward slightly */
+  100% { transform: translateY(0); }
 }
