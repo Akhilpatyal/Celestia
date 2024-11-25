@@ -67,7 +67,9 @@
                                         </ul>
                                     </li>
                                     <li><a class="menu-item" href="aboutus.html">About Us</a></li>
-                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                    <li><a type="button" class="menu-item" data-bs-toggle="modal"
+                                        data-bs-target="#contactModal">Contact</a>
+                                </li>
                                 </ul>
                             </div>
                             <div class="de-flex-col">
@@ -283,6 +285,44 @@
             </div>
         </footer>
         <!-- footer close -->
+                          <!-- Modal Structure -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-0">
+                    <img src="images/background/6.webp" alt="" class="rounded-20">
+                    <div class="gradient-overlay"></div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact With Us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email Address*">
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-3">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="submit-btn mt-4">
+                                <button type="button" class="btn">Submit Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Javascript Files

@@ -1,6 +1,6 @@
 /* ================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 /* Almaris
 /* created by designesia
 
@@ -1619,7 +1619,7 @@ header.header-mobile.header-center #logo-center {
 /* ================================================== */
 
 section {
-  padding: 140px 0 0px 0;
+  padding: 140px 0 15px 0;
 }
 
 #section-rooms {
@@ -23036,9 +23036,9 @@ textarea.form-control {
 }
 
 /* about contact */
-.right_conatct_social_icon {
-  background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
-}
+/* .right_conatct_social_icon {
+  /* background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%); */
+/* } */ 
 
 .contact_us {
   background-color: #f1f1f1;
@@ -23054,10 +23054,12 @@ textarea.form-control {
 
 .contact_field {
   padding: 15px 15px;
+  font-weight: 600;
 }
 
 .right_conatct_social_icon {
   height: 100%;
+  flex-direction: column-reverse;
 }
 
 .contact_field h3 {
@@ -23065,15 +23067,17 @@ textarea.form-control {
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  font-family: "Merriweather", serif;
 }
 
 .contact_field p {
   color: #000;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 35px;
+  font-family: "Merriweather", serif;
 }
 
 .contact_field .form-control {
@@ -23087,12 +23091,15 @@ textarea.form-control {
   outline: none;
   border-bottom: 2px solid #1325e8;
   color: #000;
+  font-family: "Merriweather", serif;
 }
 
 .contact_field .form-control::placeholder {
   color: #000;
   font-size: 13px;
   letter-spacing: 1px;
+  font-family: "Merriweather", serif;
+  font-weight:600;
 }
 
 
@@ -23145,7 +23152,7 @@ textarea.form-control {
 }
 
 button.contact_form_submit {
-  background: linear-gradient(to top right, #b77f27 -5%, #763c1e 100%);
+  background: linear-gradient(to top right, #ff9c00 -5%, #fb5600 100%);
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -23163,9 +23170,14 @@ button.contact_form_submit {
 
 .socil_item_inner li a {
   color: #fff;
-  margin: 0px 15px;
+  margin: 0px 10px;
+  padding: 4px 7px;
   font-size: 14px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 2) 10px 12px 50px 2px;
+  color:black;
 }
+
 
 .socil_item_inner li a :hover {
   scale: 1.5;
@@ -23204,4 +23216,197 @@ button.contact_form_submit {
     0 0 25px #a28261,
     0 0 50px #a28261,
     0 0 200px #a28261;
+}
+.cursor:hover{
+  cursor:pointer;
+}
+.modal-content {
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  /* padding: 20px; */
+  color: #fff;
+  position: relative;
+  object-fit: cover;
+}
+.modal-content img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+    height: auto;
+}
+.modal-header {
+  border-bottom: none;
+}
+
+.btn-close {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.modal-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: rgba(245, 245, 245, 0.2);
+  color: var(--bd-color-common-white);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+}
+.select-control{
+  padding: 0px 20px !important;
+}
+
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Glow effect on focus */
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.submit-btn .btn {
+  background-color: #c00; /* Red button */
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+}
+
+/* .submit-btn .btn:hover {
+  background-color: #22333; /* Darker red on hover */
+/* } */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+      padding: 15px;
+  }
+
+  .form-control {
+      padding: 10px;
+  }
+
+  .submit-btn .btn {
+      padding: 10px;
+  }
+}
+
+/* modal */
+.modal-content {
+  background: rgba(255, 255, 255, 0.1); /* Glass effect background */
+  backdrop-filter: blur(10px); /* Glassmorphism blur */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden; /* Ensure nothing overflows */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for elegance */
+}
+
+.modal-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the modal */
+  z-index: -1; /* Keeps the image behind other content */
+  filter: blur(8px) brightness(0.7); /* Blurred and darkened image */
+}
+
+.modal-header {
+  border-bottom: none;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-close {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+  border: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-close:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Glow effect */
+  transform: translateY(-3px); /* Slight lift on focus */
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.submit-btn .btn {
+  background: linear-gradient(45deg, #ff0000, #ff6600); /* Futuristic gradient */
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn .btn:hover {
+  background: linear-gradient(45deg, #ff6600, #ff0000); /* Reverse gradient on hover */
+ 
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+      padding: 15px;
+  }
+
+  .form-control {
+      padding: 10px;
+  }
+
+  .submit-btn .btn {
+      padding: 10px;
+  }
 }
