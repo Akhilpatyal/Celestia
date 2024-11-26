@@ -23416,9 +23416,9 @@ button.contact_form_submit {
   .submit-btn .btn {
       padding: 10px;
   }
-  .jarallax-img{
+  /* .jarallax-img{
     height: 365.9px !important;
-  }
+  } */
 }
 /* navigation */
 #mainmenu li a:before{
@@ -23493,3 +23493,6 @@ border-radius: 4px;
   text-shadow: #ffffff 1px 0 10px;
 }
 
+.jarallax-img{
+  height: 365.9px !important;
+}
