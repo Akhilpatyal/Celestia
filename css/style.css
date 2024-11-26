@@ -23499,3 +23499,25 @@ border-radius: 4px;
 .mb-48{
   margin-bottom: 48px;
 }
+
+/* another page */
+.project-site-visit{
+  background-color: #007bff;
+  color: #ffffff;
+  display: inline-block;
+  padding: 4px 15px;
+    border-radius: 10px;
+}
+.configuration-item h4{
+  color: #007bff!important;
+}
+#section-intro .abs-centered {
+  transform: translate(-50%, -0%)!important;
+}
+@media (max-width: 576px) {
+
+  #section-intro .abs-centered {
+    transform: translate(-50%, -40%)!important;
+  }
+
+}
