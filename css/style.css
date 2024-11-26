@@ -23508,16 +23508,32 @@ border-radius: 4px;
   padding: 4px 15px;
     border-radius: 10px;
 }
+.brochure {
+  background-color: #007bff;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 10px;
+  width: 44%;
+  text-align: center;
+  color: aliceblue;
+}
 .configuration-item h4{
   color: #007bff!important;
+}
+.configuration-item {
+  border-left:2px solid white;
 }
 #section-intro .abs-centered {
   transform: translate(-50%, -0%)!important;
 }
-@media (max-width: 576px) {
+ul li{
+  list-style: none;
+}
+
+/* @media (max-width: 576px) {
 
   #section-intro .abs-centered {
     transform: translate(-50%, -40%)!important;
   }
 
-}
+} */
