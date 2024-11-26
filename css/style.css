@@ -23493,6 +23493,9 @@ border-radius: 4px;
   text-shadow: #ffffff 1px 0 10px;
 }
 
-.jarallax-img{
+#subheader .jarallax-img{
   height: 365.9px !important;
+}
+.mb-48{
+  margin-bottom: 48px;
 }
