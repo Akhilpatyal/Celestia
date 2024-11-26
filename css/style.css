@@ -923,7 +923,7 @@ header.smaller #mainmenu>li::before {
   position: relative;
   display: inline-block;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   text-decoration: none;
   color: #ffffff;
   text-align: center;
@@ -22763,7 +22763,6 @@ img {
 }
 
 textarea.form-control {
-  min-height: 150px;
   resize: none;
 }
 
@@ -23410,3 +23409,23 @@ button.contact_form_submit {
       padding: 10px;
   }
 }
+/* navigation */
+#mainmenu li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #a28261;;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+#mainmenu li a:hover:before{
+  width: 100%;
+}
+#mainmenu li a:before{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
