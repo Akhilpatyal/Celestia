@@ -4457,6 +4457,8 @@ hr {
   margin: 10px 15px 0 0;
   color: #eceff3;
   padding: 20px 10px 20px 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* form */
@@ -11839,6 +11841,7 @@ footer .widget {
 }
 
 .widget_tags li a {
+  border-radius: 4px;
   font-size: 12px;
   text-decoration: none;
   color: #fff !important;
@@ -11854,6 +11857,7 @@ footer .widget {
 .widget_tags li a:hover {
   color: #555;
   border-color: #555;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .de_light .widget_tags li a:hover {
@@ -11884,7 +11888,7 @@ footer .widget {
   border-color: #555;
 }
 
-.widget_tags li a:hover border-color: #eceff3;
+.widget_tags li a:hover {border-color: #eceff3;
 }
 
 footer .widget {
@@ -23208,13 +23212,16 @@ button.contact_form_submit {
 }
 
 /* menu_side_area */
-.menubtn:hover {
+.menubtn:hover a {
   /* background: #03e9f4; */
   background-color: #a28261;
   box-shadow: 0 0 5px #a28261,
     0 0 25px #a28261,
     0 0 50px #a28261,
     0 0 200px #a28261;
+}
+.menubtn a{
+  border-radius: 4px;
 }
 .cursor:hover{
   cursor:pointer;
@@ -23383,6 +23390,7 @@ button.contact_form_submit {
 
 .submit-btn .btn:hover {
   background: linear-gradient(45deg, #ff6600, #ff0000); /* Reverse gradient on hover */
+  
  
 }
 
@@ -23428,4 +23436,58 @@ button.contact_form_submit {
   left: 50%;
   transform: translateX(-50%);
 }
+#blog-comment .avatar img{
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.widget-post .d-image img{
+  border-radius: 15px;
+}
+.de-bloglist-type-1 .d-image {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image-overlay{
+  position: relative;
+  display: inline-block;
+}
+.image-overlay img{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.image-overlay::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:96%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+  border-radius: 20px;
+}
+#send{
+  border-radius: 2px;
+}
+.widget-post ul li{
+  position: relative;
+}
+.widget-post ul li .d-content::after{
+content: "";
+position: absolute;
+top:0;
+background-color:#87868529;
+width: 100%;
+height: 0%;
+opacity:0;
+z-index: 22;
+transition: all 0.8s ease-in-out;
+margin: -4px -6px;
+border-radius: 4px;
 
+} 
+.widget-post ul li .d-content:hover::after{
+  height: 85%;
+  opacity: 1;
+}
+.txtshadow{
+  text-shadow: #ffffff 1px 0 10px;
+}
