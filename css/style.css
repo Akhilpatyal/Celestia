@@ -304,25 +304,17 @@ header.autoshow {
   height: 70px !important;
 }
 
-/* 
-header.autoshow.scrollOn,
-header.autoshow.scrollOff {
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-  outline: none;
-}
-
 header.autoshow.scrollOn {
-  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 header.autoshow.scrollOff {
-  opacity: 1;
-  top: -120px;
-} */
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
 header div#logo {
   color: white;
