@@ -84,7 +84,7 @@
                   <!-- logo close -->
                 </div>
                 <div class="de-flex-col header-col-mid m-auto">
-                  <ul id="mainmenu">
+                  <ul id="mainmenu" class="citymenu">
                     <li><a class="menu-item" href="index.html">Home</a></li>
                     <li>
                       <a class="menu-item" href="#aboutus">About Us</a>
@@ -97,7 +97,7 @@
                       <a class="menu-item" href="#ameneties">Ameneties</a>
                     </li>
                     <li>
-                      <a class="menu-item" href="#gallery">Gallery</a>
+                      <a class="menu-item" href="#features">Features</a>
                     </li>
                     <li>
                       <a class="menu-item" href="#floorplan">Floor Plan</a>
@@ -105,17 +105,39 @@
                     <li>
                       <a class="menu-item" href="#location">Location</a>
                     </li>
-                    <li>
-                      <a
-                        type="button"
-                        class="menu-item"
-                        data-bs-toggle="modal"
-                        data-bs-target="#contactModal"
-                        >Contact</a
-                      >
+                    <li><a type="button" class="menu-item" data-bs-toggle="modal"
+                      data-bs-target="#contactModal">Contact</a>
                     </li>
                   </ul>
                 </div>
+                <div class="de-flex-col">
+                  <div class="menu_side_area">          
+                 <div class="menubtn">
+                   <!-- logo begin -->
+                   <div id="logo">
+                    <a href="index.html">
+                      <img
+                        class="logo-main"
+                        src="images/background/logo.png"
+                        alt=""
+                      />
+                      <img
+                        class="logo-scroll"
+                        src="images/background/logo.png"
+                        alt=""
+                      />
+                      <img
+                        class="logo-mobile"
+                        src="images/background/logo.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- logo close -->
+                  <span id="menu-btn"></span>
+                 </div>
+                  </div>
+              </div>
               </div>
             </div>
           </div>
@@ -134,40 +156,40 @@
             <div class="abs abs-centered z-1000 w-100 bottom-0">
               <div
                 class="container"
-                style="max-width: 1200px; margin: auto; padding: 0 15px"
+                style="max-width: 1200px; margin: 20px; padding: 0 15px"
               >
               
-                <h2 class="fs-1">Conscient Elevate Residence</h2>
-                <p>Sector 64, Gurgaon</p>
+                <h2 class="fs-1 txtshadow">Conscient Elevate Residence</h2>
+                <h5>Sector 64, Gurgaon</h5>
                 <div class="row p-2">
                   <div class="col-sm-2 col-3 configuration-item">
-                    <h4>Price</h4>
+                    <h3>Price</h3>
                     <p>On Request</p>
                   </div>
                   <div class="col-sm-2 col-3 configuration-item">
-                    <h4>Sizes</h4>
+                    <h3>Sizes</h3>
                     <p>7350 - 16000 Sq. Ft.</p>
                   </div>
-                  <div class="col-sm-2 col-6 configuration-item">
-                    <h4>Configurations</h4>
+                  <div class="col-sm-3 col-6 configuration-item">
+                    <h3>Configurations</h3>
                     <p>Apts | Penthouses</p>
                   </div>
                   <div class="col-sm-2 col-4 configuration-item">
-                    <h4>Status</h4>
+                    <h3>Status</h3>
                     <p>Ready to Move</p>
                   </div>
                   <div class="col-sm-2 col-4 configuration-item">
-                    <h4>Rera No.</h4>
+                    <h3>Rera No.</h3>
                     <p>Not Applicable</p>
                   </div>
                 </div>
-                <div class="project-site-visit mt-4 pt-2">
+                <div class="brochure p-2 mt-4">
                   <a
                     href="#"
                     class="btn"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
-                    >Schedule Site Visit</a
+                    >Download Floor Plan</a
                   >
                 </div>
               </div>
@@ -182,7 +204,8 @@
                     class="swiper-inner"
                     data-bgimage="url(https://www.conscient.in/images/Project%20Detail/banner.jpg)"
                   >
-                    <div class="de-overlay"></div>
+                    <div class="gradient-trans-black-bottom abs w-100 h-100"
+                    style="bottom: 0px"></div>
                   </div>
                 </div>
                 <!-- Slides -->
@@ -193,7 +216,8 @@
                     class="swiper-inner"
                     data-bgimage="url(https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-1.jpg)"
                   >
-                    <div class="de-overlay"></div>
+                    <div class="gradient-trans-black-bottom abs w-100 h-100"
+                    style="bottom:0px"></div>
                   </div>
                 </div>
                 <!-- Slides -->
@@ -204,7 +228,8 @@
                     class="swiper-inner"
                     data-bgimage="url(https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-3.jpg)"
                   >
-                    <div class="de-overlay"></div>
+                    <div class="gradient-trans-black-bottom abs w-100 h-100"
+                    style="bottom:0px"></div>
                   </div>
                 </div>
                 <!-- Slides -->
@@ -213,8 +238,8 @@
           </div>
         </section>
 
-        <!-- our mission -->
-        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5">
+        <!-- about -->
+        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5" id="aboutus">
           <div class="container-fluid position-relative half-fluid">
             <div class="container mt-3">
               <div class="row g-4">
@@ -274,7 +299,7 @@
         </section>
 
         <!-- Conscient Elevate highlight left-->
-        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5">
+        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5" id="highlights">
           <div class="container-fluid position-relative half-fluid">
             <div class="container mt-3 fadeInUp">
 
@@ -282,7 +307,7 @@
                 <!-- Text -->
                 <div class="col-lg-6 visionTXT">
                   <h3
-                    class="wow fadeInUp bg-dark text-white p-2"
+                    class="wow fadeInUp text-orange text-white p-2"
                     data-wow-delay=".2s"
                   >
                     Conscient Elevate Highlights
@@ -365,12 +390,12 @@
         </section>
 
         <!--Conscient Elevate Ameneties right-->
-        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5">
+        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5" id="ameneties">
           <div class="container-fluid position-relative half-fluid">
             <div class="container mt-3">
               <div class="row mt-1">
-                <div class="col-lg-6 rounded-20 mission">
-                  <div class="relative">
+                <div class="col-lg-6 rounded-20">
+                  <!-- <div class="relative">
                     <div
                       class="image rounded-20 shadow-soft"
                       data-bgimage="url(https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-11.jpg) center"
@@ -379,12 +404,52 @@
                       class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                       style="bottom: 0px"
                     ></div>
+                  </div> -->
+                  <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide rounded-20">
+                        <div
+                          class="swiper-inner rounded-20"
+                          data-bgimage="url(https://www.conscient.in/images/Project%20Detail/banner.jpg)"
+                        >
+                          <div class="gradient-trans-black-bottom abs w-100 h-100 rounded-20"
+                          style="bottom: 0px"></div>
+                        </div>
+                      </div>
+                      <!-- Slides -->
+      
+                      <!-- Slides -->
+                      <div class="swiper-slide rounded-20">
+                        <div
+                          class="swiper-inner rounded-20"
+                          data-bgimage="url(https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-1.jpg)"
+                        >
+                          <div class="gradient-trans-black-bottom abs w-100 h-100 rounded-20"
+                          style="bottom:0px"></div>
+                        </div>
+                      </div>
+                      <!-- Slides -->
+      
+                      <!-- Slides -->
+                      <div class="swiper-slide rounded-20">
+                        <div
+                          class="swiper-inner rounded-20"
+                          data-bgimage="url(https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-3.jpg)"
+                        >
+                          <div class="gradient-trans-black-bottom abs w-100 h-100 rounded-20"
+                          style="bottom:0px "></div>
+                        </div>
+                      </div>
+                      <!-- Slides -->
+                    </div>
                   </div>
                 </div>
                 <!-- Text -->
                 <div class="col-lg-6 visionTXT">
                   <h3
-                    class="wow fadeInUp bg-dark text-white p-2"
+                    class="wow fadeInUp text-orange text-white p-2"
                     data-wow-delay=".2s"
                   >
                     Conscient Elevate Highlights
@@ -427,55 +492,57 @@
         </section>
 
         <!-- Conscient Elevate floor plan -->
-        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5">
+        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5" id="floorplan">
           <div class="container-fluid position-relative half-fluid">
             <div class="container mt-3 fadeInUp">
               <div class="row m-1">
                 <!-- Text -->
                 <div class="col-lg-6 visionTXT">
                   <h3
-                    class="wow fadeInUp bg-dark text-white p-2"
+                    class="wow fadeInUp text-orange text-white p-2"
                     data-wow-delay=".2s"
                   >
-                    Conscient Elevate floor plan
+                  Conscient Elevate Residence floor plan
                   </h3>
-                  <ul>
-                    <li>
-                      <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Elevating
-                        luxury with innovative architectural concepts that
-                        reflect modern sophistication.
-                      </p>
-                    </li>
-                    <li>
-                      <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Elevating
-                        luxury with innovative architectural concepts that
-                        reflect modern sophistication.
-                      </p>
-                    </li>
-                    <li>
-                      <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Elevating
-                        luxury with innovative architectural concepts that
-                        reflect modern sophistication.
-                      </p>
-                    </li>
-                    <li>
-                      <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Elevating
-                        luxury with innovative architectural concepts that
-                        reflect modern sophistication.
-                      </p>
-                    </li>
-                  </ul>
+                  <table class="table table-bordered">
+                    <tbody><tr>
+                        <th>Type</th>
+                        <th>Size</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Apartments</td>
+                        <td>7350 Sq. Ft.</td>
+                    </tr>
+                    <tr>
+                        <td>9500 Sq. Ft.</td>
+                    </tr>
+                    <tr>
+                        <td>11000 Sq. Ft.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Penthouses</td>
+                        <td>13000 Sq. Ft.</td>
+                    </tr>
+                    <tr>
+                        <td>16000 Sq. Ft.</td>
+                    </tr>
+                </tbody></table>
+                <div class="brochure p-2 mt-4">
+                  <a
+                    href="#"
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Download Floor Plan</a
+                  >
+                </div>
                 </div>
                 <!-- Image -->
                 <div class="col-lg-6 rounded-20 mission visionIMG">
                   <div class="relative">
                     <div
                       class="image rounded-20 shadow-soft"
-                      data-bgimage="url(https://cdn.pixabay.com/photo/2019/12/02/08/04/city-4667143_1280.jpg) center"
+                      data-bgimage="url(https://www.reiasindia.com/uploads/pptFile/conscient-hines-elevate-master-plan--site.jpg) center"
                     ></div>
                     <div
                       class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
@@ -489,7 +556,7 @@
         </section>
 
         <!--Conscient Elevate Features -->
-        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5">
+        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5" id="features">
           <div class="container-fluid position-relative half-fluid">
             <div class="container mt-3">
               <div class="row mt-1">
@@ -497,7 +564,7 @@
                   <div class="relative">
                     <div
                       class="image rounded-20 shadow-soft"
-                      data-bgimage="url(https://cdn.pixabay.com/photo/2019/12/02/08/04/city-4667143_1280.jpg) center"
+                      data-bgimage="url(https://iaad.in/wp-content/uploads/2020/12/21-02-26-IAAD-SAMPLE-FLAT-%C2%A9-Noughts-and-Crosses-LLP-093-scaled.jpg) center"
                     ></div>
                     <div
                       class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
@@ -508,38 +575,38 @@
                 <!-- Text -->
                 <div class="col-lg-6 visionTXT">
                     <h3
-                    class="wow fadeInUp bg-dark text-white p-2"
+                    class="wow fadeInUp text-orange text-white p-2"
                     data-wow-delay=".2s"
                   >
-                    Conscient Elevate Features
+                  Conscient Elevate Residence Features
                   </h3>
                   <div class="row">
-                    <div class="col-lg-6 p-3">
+                    <div class="col-lg-6 p-2">
                       <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Elevating
+                        <h5> <i class="fa-solid fa-circle-check"></i> Land Of Serenity</h5> Elevating
                         luxury with innovative architectural concepts that
                         reflect modern sophistication.
                       </p>
                     </div>
-                    <div class="col-lg-6 p-3">
+                    <div class="col-lg-6 p-2">
                       <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Crafting
-                        personalized designs that transform clients' dreams into
-                        reality with exceptional craftsmanship.
+                        <h5> <i class="fa-solid fa-circle-check"></i> Land Of Serenity</h5> Elevating
+                        luxury with innovative architectural concepts that
+                        reflect modern sophistication.
                       </p>
                     </div>
-                    <div class="col-lg-6 p-3">
+                    <div class="col-lg-6 p-2">
                       <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Incorporating
-                        sustainable building practices while maintaining a
-                        luxurious, eco-friendly aesthetic.
+                        <h5> <i class="fa-solid fa-circle-check"></i> Land Of Serenity</h5> Elevating
+                        luxury with innovative architectural concepts that
+                        reflect modern sophistication.
                       </p>
                     </div>
-                    <div class="col-lg-6 p-3">
+                    <div class="col-lg-6 p-2">
                       <p class="fadeInUp" data-wow-delay=".3s">
-                        <i class="fa-solid fa-circle-check"></i> Creating spaces
-                        that inspire and elevate the everyday experience for
-                        residents.
+                        <h5> <i class="fa-solid fa-circle-check"></i> Land Of Serenity</h5> Elevating
+                        luxury with innovative architectural concepts that
+                        reflect modern sophistication.
                       </p>
                     </div>
                   </div>
@@ -550,7 +617,7 @@
         </section>
 
         <!-- Conscient Elevate Residence gallery -->
-        <section id="section-rooms" class="px-2 no-bottom pt30">
+        <section id="section-rooms " class="px-2 no-bottom pt30">
           <div class="container-fluid relative z-2">
             <div class="row g-4">
               <div class="col-lg-8 offset-lg-2 text-center">
@@ -566,28 +633,11 @@
               <!-- item1 -->
               <div class="item">
                 <div
-                  class="hover relative text-light text-center wow fadeInUp"
+                  class="hover relative text-light text-center wow fadeInUp "
                   data-wow-delay=".3s"
                 >
-                  <img src="images/room/1.png" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">₹ On Request</h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">DLF Camellias</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Sector 42, </span>
-                      <span class="mx-2"> Gurugram </span>
-                    </div>
-                  </div>
+                  <img src="https://www.reiasindia.com/uploads/pptFile/conscient-hines-elevate-master-plan--site.jpg" class="w-100" alt="" />
+    
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -601,25 +651,8 @@
                   class="hover relative text-light text-center wow fadeInUp"
                   data-wow-delay=".4s"
                 >
-                  <img src="images/room/2.webp" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">₹10.40 Cr*</h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">Trump Tower</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Sector 65, </span>
-                      <span class="mx-2"> Gurugram </span>
-                    </div>
-                  </div>
+                  <img src="https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-8.jpg" class="w-100" alt="" />
+                
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -632,27 +665,8 @@
                   class="hover relative text-light text-center wow fadeInUp"
                   data-wow-delay=".5s"
                 >
-                  <img src="images/room/3.webp" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">
-                      ₹ 5.61 Cr* Onwards
-                    </h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">Godrej South Estate</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Okhla Phase - 1, </span>
-                      <span class="mx-2"> South Delhi </span>
-                    </div>
-                  </div>
+                  <img src="https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-3.jpg" class="w-100" alt="" />
+             
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -665,25 +679,8 @@
                   class="hover relative text-light text-center wow fadeInUp"
                   data-wow-delay=".7s"
                 >
-                  <img src="images/room/4.webp" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">₹ 5.25 Cr Onwards</h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">Tarc Tripundra</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Main Bijwasan Road, </span>
-                      <span class="mx-2"> New Delhi </span>
-                    </div>
-                  </div>
+                  <img src="https://www.conscient.in/images/Project%20Detail/Elevate/bottom-banner-11.jpg" class="w-100" alt="" />
+                 
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -696,27 +693,8 @@
                   class="hover relative text-light text-center wow fadeInUp"
                   data-wow-delay=".7s"
                 >
-                  <img src="images/room/5.jpg" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">
-                      ₹ 6.99 Cr* Onwards
-                    </h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">DLF One Midtown</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Moti Nagar, </span>
-                      <span class="mx-2"> West Delhi </span>
-                    </div>
-                  </div>
+                  <img src="https://www.reiasindia.com/uploads/pptFile/conscient-hines-elevate-master-plan--site.jpg" class="w-100" alt="" />
+                  
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -729,27 +707,8 @@
                   class="hover relative text-light text-center wow fadeInUp"
                   data-wow-delay=".7s"
                 >
-                  <img src="images/room/6.webp" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">
-                      ₹ 7.80 Cr* Onwards
-                    </h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">Phoenix Kessaku</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Rajkumar Rd, Rajajinagar, </span>
-                      <span class="mx-2"> Bangalore </span>
-                    </div>
-                  </div>
+                  <img src="https://iaad.in/wp-content/uploads/2020/12/21-02-26-IAAD-SAMPLE-FLAT-%C2%A9-Noughts-and-Crosses-LLP-093-scaled.jpg" class="w-100" alt="" />
+                
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -763,24 +722,7 @@
                   data-wow-delay=".7s"
                 >
                   <img src="images/room/7.png" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">₹ On Request</h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">Embassy One</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Off Bellary Road, </span>
-                      <span class="mx-2"> Bangalore </span>
-                    </div>
-                  </div>
+                
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -794,26 +736,7 @@
                   data-wow-delay=".7s"
                 >
                   <img src="images/room/8.webp" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">
-                      ₹ 6.20 Cr* Onwards
-                    </h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">Embassy Lake Terraces</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> NH -7, Hebbal, </span>
-                      <span class="mx-2"> Bangalore </span>
-                    </div>
-                  </div>
+                
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -827,24 +750,7 @@
                   data-wow-delay=".7s"
                 >
                   <img src="images/room/9.webp" class="w-100" alt="" />
-                  <div
-                    class="abs hover-op-1 z-4 hover-mt-40 abs-centered text-dark"
-                  >
-                    <div class="fs-14">From</div>
-                    <h3 class="fs-40 lh-1 mb-4 text-dark">₹ 3 Cr* Onwards</h3>
-                  </div>
-                  <div
-                    class="abs bg-light z-2 top-0 w-100 h-100 hover-op-1"
-                  ></div>
-                  <div
-                    class="abs py-3 z-2 bottom-0 w-100 text-center hover-op-0"
-                  >
-                    <h3 class="mb-0">The Ark Voyage</h3>
-                    <div class="text-center fs-16">
-                      <span class="mx-2"> Hadapsar, Pune, </span>
-                      <span class="mx-2"> Maharashtra </span>
-                    </div>
-                  </div>
+                  
                   <div
                     class="gradient-trans-black-bottom abs w-100 h-100 borR-20"
                     style="bottom: 10px"
@@ -856,7 +762,7 @@
         </section>
 
         <!--Conscient Elevate Location Advantage -->
-        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5">
+        <section class="no-top no-bottom overflow-hidden mt-5 pt-1 mb-5" id="location">
           <div class="container-fluid position-relative half-fluid">
             <div class="container mt-3">
               <div class="row mt-1">
@@ -866,10 +772,7 @@
                       class="image rounded-20 shadow-soft"
                       data-bgimage="url(https://www.conscienthineselevategurgaon.in/wp-content/uploads/2022/03/location-map.jpg) center"
                     ></div>
-                    <div
-                      class="gradient-trans-black-bottom abs w-100 h-100 rounded-10"
-                      style="bottom: 0px"
-                    ></div>
+                    <div class="de-overlay rounded-20"></div>
                   </div>
                 </div>
                 <!-- Text -->
@@ -878,7 +781,7 @@
                     class="wow fadeInUp bg-dark text-white p-2"
                     data-wow-delay=".2s"
                   >
-                    Conscient Elevate Location Advantage
+                  Conscient Elevate Location Advantage
                   </h3>
 
                   <ul>
@@ -917,7 +820,7 @@
           </div>
         </section>
 
-        <!-- other projects -->
+        <!-- FAQS -->
         <section class="jarallax">
           <img
             src="images/background/gradient-2.webp"
@@ -950,1366 +853,56 @@
                       class="accordion-section-title relative"
                       data-tab="#accordion-1"
                     >
-                      <div class="elem">Gurgaon Projects</div>
+                      <div class="elem">What is the Conscient Elevate Residence location?</div>
                     </div>
                     <div class="accordion-section-content" id="accordion-1">
-                      <ul>
-                        <li>
-                          <a
-                            href="dlf-camellias-sector-42-gurgaon/index.html"
-                            target="_blank"
-                            title="DLF Camellias"
-                            >DLF Camellias</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-the-crest-dlf-phase-5-gurgaon/index.html"
-                            target="_blank"
-                            title="DLF Crest"
-                            >DLF Crest</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-magnolias-sector-42-gurgaon/index.html"
-                            target="_blank"
-                            title="DLF Magnolias"
-                            >DLF Magnolias</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="central-park-sky-villas-sector-48-gurgaon/index.html"
-                            target="_blank"
-                            title="Central Park Sky Villas"
-                            >Central Park Sky Villas</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="central-park-the-orchard-sector-32-gurgaon/index.html"
-                            target="_blank"
-                            title="Central Park The Orchard"
-                            >Central Park The Orchard</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="paras-quartier-gwal-pahari/index.html"
-                            target="_blank"
-                            title="Paras Quartier"
-                            >Paras Quartier</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="conscient-hines-elevate-sector-59-gurgaon/index.html"
-                            target="_blank"
-                            title="Conscient Hines Elevate"
-                            >Conscient Hines Elevate</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="suncity-platinum-tower-mg-road-gurgaon/index.html"
-                            target="_blank"
-                            title="Suncity Platinum Towers"
-                            >Suncity Platinum Towers</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="trump-towers-sector-65-gurgaon/index.html"
-                            target="_blank"
-                            title="Trump Towers Gurgaon"
-                            >Trump Towers Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="silverglades-hightown-residences-sector-28-sushant-lok-1-gurgaon/index.html"
-                            target="_blank"
-                            title="Silverglades Hightown Residences"
-                            >Silverglades Hightown Residences</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="central-park-bellavista-sector-48-gurgaon/index.html"
-                            target="_blank"
-                            title="Central Park Bellavista"
-                            >Central Park Bellavista</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="central-park-flower-valley-sector-32-gurgaon/index.html"
-                            target="_blank"
-                            title="Central Park Flower Valley"
-                            >Central Park Flower Valley</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-international-city-sector-108-gurgaon/index.html"
-                            target="_blank"
-                            title="Sobha International City"
-                            >Sobha International City</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="ireo-gurgaon-hills-gwal-pahari/index.html"
-                            target="_blank"
-                            title="IREO Gurgaon Hills"
-                            >IREO Gurgaon Hills</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="ireo-ascott-sector-59-gurgaon/index.html"
-                            target="_blank"
-                            title="IREO Ascott"
-                            >IREO Ascott</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="m3m-st.andrews-sector-65-gurgaon/index.html"
-                            target="_blank"
-                            title="M3M St. Andrews"
-                            >M3M St. Andrews</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="m3m-golfestate-sector-65-gurgaon/index.html"
-                            target="_blank"
-                            title="M3M Golf Estate"
-                            >M3M Golf Estate</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="m3m-latitude-sector-65-gurgaon/index.html"
-                            target="_blank"
-                            title="M3M Latitude"
-                            >M3M Latitude</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="m3m-polo-suites-sector-65-gurgaon/index.html"
-                            target="_blank"
-                            title="M3M Polo Suites"
-                            >M3M Polo Suites</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="m3m-merlin-sector-67-gurgaon/index.html"
-                            target="_blank"
-                            title="M3M Merlin"
-                            >M3M Merlin</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mahindra-luminare-sector-59-gurgaon/index.html"
-                            target="_blank"
-                            title="Mahindra Luminare"
-                            >Mahindra Luminare</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="ambience-caitriona-dlf-phase-3-gurgaon/index.html"
-                            target="_blank"
-                            title="Ambience Caitriona"
-                            >Ambience Caitriona</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="ss-group-the-hibiscus-sector-50-gurgaon/index.html"
-                            target="_blank"
-                            title="SS Hibiscus"
-                            >SS Hibiscus</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="tata-primanti-sector-72-gurgaon/index.html"
-                            target="_blank"
-                            title="Tata Primanti"
-                            >Tata Primanti</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pioneer-araya-sector-62-gurgaon/index.html"
-                            target="_blank"
-                            title="Pioneer Araya"
-                            >Pioneer Araya</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pioneer-presidia-sector-62-gurgaon/index.html"
-                            target="_blank"
-                            title="Pioneer Presidia"
-                            >Pioneer Presidia</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-meridien-sector-106-gurgaon/index.html"
-                            target="_blank"
-                            title="Godrej Meridien"
-                            >Godrej Meridien</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="emaar-digihomes-sector-62-gurgaon/index.html"
-                            target="_blank"
-                            title="Emaar DigiHomes"
-                            >Emaar DigiHomes</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="emaar-urban-oasis-sector-62-gurgaon/index.html"
-                            target="_blank"
-                            title="Emaar Urban Oasis"
-                            >Emaar Urban Oasis</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-city-sector-108-gurgaon/index.html"
-                            target="_blank"
-                            title="Sobha City"
-                            >Sobha City</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="ambience-creacions-sector-22-gurgaon/index.html"
-                            target="_blank"
-                            title="Ambience Creacions"
-                            >Ambience Creacions</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="tulip-monsella-sector-53-gurgaon/index.html"
-                            target="_blank"
-                            title="Tulip Monsella"
-                            >Tulip Monsella</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="puri-aravallis-sector-61-gurgaon/index.html"
-                            target="_blank"
-                            title="Puri Aravallis"
-                            >Puri Aravallis</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-the-grove-sector-54-gurgaon/index.html"
-                            target="_blank"
-                            title="DLF Grove"
-                            >DLF Grove</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="elan-the-presidential-sector-106-gurgaon/index.html"
-                            target="_blank"
-                            title="Elan Presidential"
-                            >Elan Presidential</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-vista-residences-sector-108-gurgaon/index.html"
-                            title="Sobha Vista Residences"
-                            target="_blank"
-                            >Sobha Vista Residences</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-royale-residences-dlf-city-phase-1%263-gurgaon/index.html"
-                            title="DLF Royale Residences"
-                            target="_blank"
-                            >DLF Royale Residences</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-imperial-residences-independent-floors-gurgaon/index.html"
-                            title="DLF Imperial Residences"
-                            target="_blank"
-                            >DLF Imperial Residences</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-the-arbour-sector-63-gurgaon/index.html"
-                            title="DLF The Arbour"
-                            target="_blank"
-                            >DLF Arbour</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="whiteland-the-aspen/index.html"
-                            title="Whiteland The Aspen"
-                            target="_blank"
-                            >Whiteland Aspen</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="conscient-hines-elevate-reserve-sector-62-gurgaon/index.html"
-                            title="Conscient Elevate Reserve"
-                            target="_blank"
-                            >Conscient Elevate Reserve</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-privana-south-sector-77-gurgaon/index.html"
-                            title="DLF Privana South"
-                            target="_blank"
-                            >DLF Privana South</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="anantraj-the-estate-residences-sector-63a-gurgaon/index.html"
-                            title="Anantraj The Estate Residences"
-                            target="_blank"
-                            >Anantraj The Estate Residences</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="signature-global-deluxe-dxp-sector-37D-gurgaon/index.html"
-                            title="Signature Global Deluxe DXP"
-                            target="_blank"
-                            >Signature Global Deluxe DXP</a
-                          >
-                        </li>
-                      </ul>
+                  <p>Located on the main Golf Course road in Sector 64, Golf Links, DLF Phase 5, Gurgaon, Haryana has direct access to the international airport, branded schools, reputed hospitals and shopping malls. Explore more in detail with the above associated Conscient Elevate Residence location map.</p>
                     </div>
 
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-2"
                     >
-                      Bangalore Projects
+                    . What is the Conscient Elevate Residence construction status?
                     </div>
                     <div class="accordion-section-content" id="accordion-2">
-                      <ul>
-                        <li>
-                          <a
-                            href="embassy-boulevard-yelahanka-bangalore/index.html"
-                            target="_blank"
-                            title="Embassy Boulevard"
-                            >Embassy Boulevard</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="four-seasons-private-residences-bellary-road-bangalore/index.html"
-                            target="_blank"
-                            title="Embassy One"
-                            >Embassy One</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="embassy-grove-kodihalli-bangalore/index.html"
-                            target="_blank"
-                            title="Embassy Grove"
-                            >Embassy Grove</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="embassy-lake-terraces-hebbal-bangalore/index.html"
-                            target="_blank"
-                            title="Embassy Lake Terraces"
-                            >Embassy Lake Terraces</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="embassy-springs-devanahalli-bangalore/index.html"
-                            target="_blank"
-                            title="Embassy Springs"
-                            >Embassy Springs</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="phoenix-kessaku-rajajinagar-bangalore/index.html"
-                            target="_blank"
-                            title="Phoenix Kessaku"
-                            >Phoenix Kessaku</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="phoenix-one-bangalore-west-rajajinagar-bangalore/index.html"
-                            target="_blank"
-                            title="Phoenix One Bangalore West"
-                            >Phoenix One Bangalore West</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="purva-atmosphere-thanisandra-main-rd-bangalore/index.html"
-                            target="_blank"
-                            title="Purva Atmosphere"
-                            >Purva Atmosphere</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-windsor-whitefield-bangalore/index.html"
-                            target="_blank"
-                            title="Sobha Windsor"
-                            >Sobha Windsor</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-royal-pavilion-sarjapur-road-bangalore/index.html"
-                            target="_blank"
-                            title="Sobha Royal Pavilion"
-                            >Sobha Royal Pavilion</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="century-ethos-hebbal-bangalore/index.html"
-                            target="_blank"
-                            title="Century Ethos"
-                            >Century Ethos</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="purva-tiara-bangalore/index.html"
-                            target="_blank"
-                            title="Purva Tiara"
-                            >Purva Tiara</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="purva-meraki-bangalore/index.html"
-                            target="_blank"
-                            title="Purva Meraki"
-                            >Purva Meraki</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="purva-sparkling-springs-bannerghatta-bangalore/index.html"
-                            target="_blank"
-                            title="Purva Sparkling Springs"
-                            >Purva Sparkling Springs</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="purva-smiling-willows-bannerghatta-bangalore/index.html"
-                            target="_blank"
-                            title="Purva Smiling Willows"
-                            >Purva Smiling Willows</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-royal-crest-banashankari-bangalore/index.html"
-                            target="_blank"
-                            title="Sobha Royal Crest"
-                            >Sobha Royal Crest</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-galera-la-casa-bangalore/index.html"
-                            target="_blank"
-                            title="Sobha Galera"
-                            >Sobha Galera</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-oakshire-devanahalli-bangalore/index.html"
-                            target="_blank"
-                            title="Sobha Galera"
-                            >Sobha Oakshire</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="sobha-lifestyle-legacy-devanahalli-bangalore/index.html"
-                            target="_blank"
-                            title="Sobha Lifestyle Legacy"
-                            >Sobha Lifestyle Legacy</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="divyasree-77-life-yemalur-bangalore/index.html"
-                            target="_blank"
-                            title="Divyasree 77 Life"
-                            >Divyasree 77 Life</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-athena-indranagar-hal-bangalore/index.html"
-                            target="_blank"
-                            title="Godrej Athena"
-                            >Godrej Athena</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="lnt-raintree-boulevard-olivia-bangalore/index.html"
-                            target="_blank"
-                            title="L&T Raintree Boulevard"
-                            >L&T Raintree Boulevard</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="lodha-azur-begur-bannerghatta-bangalore/index.html"
-                            target="_blank"
-                            title="Lodha Azur"
-                            >Lodha Azur</a
-                          >
-                        </li>
-                      </ul>
+                   <p>The project is currently ready to move as construction work was completed in ###. If you're interested in knowing more about the Conscient Elevate Residence construction update, please stay tuned as we keep posting the latest updates i.e. photos, videos on our website.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-3"
                     >
-                      Delhi Projects
+                    What are the Conscient Elevate Residence Reviews?
                     </div>
                     <div class="accordion-section-content" id="accordion-3">
-                      <ul>
-                        <li>
-                          <a
-                            href="dlf-kings-court-greater-kailash-delhi/index.html"
-                            target="_blank"
-                            title="DLF Kings Court"
-                            >DLF Kings Court</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="the-leela-sky-villas-central-delhi/index.html"
-                            target="_blank"
-                            title="The Leela Sky Villas"
-                            >The Leela Sky Villas</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-south-estate-okhla-delhi/index.html"
-                            target="_blank"
-                            title="Godrej South Estate"
-                            >Godrej South Estate</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="risland-sky-mansion-chattarpur-delhi/index.html"
-                            target="_blank"
-                            title="Risland - Sky Mansion"
-                            >Risland Sky Mansion</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-midtown-moti-nagar-delhi/index.html"
-                            target="_blank"
-                            title="DLF One Midtown"
-                            >DLF One Midtown</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="tarc-tripundra-main-bijwasan-road-new-delhi/index.html"
-                            target="_blank"
-                            title="Tarc Tripundra"
-                            >Tarc Tripundra</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-connaught-one-new-delhi/index.html"
-                            target="_blank"
-                            title="Godrej Connaught One"
-                            >Godrej Connaught One</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-prima-okhla-south-delhi/index.html"
-                            target="_blank"
-                            title="Godrej Prima"
-                            >Godrej Prima</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="tarc-kailasa-kirti-nagar-delhi/index.html"
-                            target="_blank"
-                            title="Tarc Kailasa"
-                            >Tarc Kailasa</a
-                          >
-                        </li>
-                      </ul>
+                     <p>Conscient Elevate Residence ratings are good. It received positive responses from buyers as it offers ultra luxurious amenities, world-class infrastructure, seamless connectivity, and high-quality construction standards.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-4"
                     >
-                      Pune Projects
+                    What is the starting price of Conscient Elevate Residence?
                     </div>
                     <div class="accordion-section-content" id="accordion-4">
-                      <ul>
-                        <li>
-                          <a
-                            href="the-ark-voyage-pune-maharashtra/index.html"
-                            target="_blank"
-                            title="The Ark Voyage"
-                            >The Ark Voyage</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="yooone-hadapsar-pune-maharashtra/index.html"
-                            target="_blank"
-                            title="Yoo One Pune"
-                            >Yoo One Pune</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-river-royale-pune-maharashtra/index.html"
-                            target="_blank"
-                            title="Godrej River Royale"
-                            >Godrej River Royale</a
-                          >
-                        </li>
-                      </ul>
+                    <p>Conscient Elevate Residence price is available only on request for 4, 5 & 6 BHK luxury apartments & penthouses, located on the most prominent area of Golf Course Road. Need Conscient Elevate Residence Cost breakup? Connect with our relationship managers.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-5"
-                    >
-                      Goa Projects
+                    >What is the Conscient Elevate Residence launch date?
                     </div>
                     <div class="accordion-section-content" id="accordion-5">
-                      <ul>
-                        <li>
-                          <a
-                            href="conscient-vista-arrozal-candolim-goa/index.html"
-                            target="_blank"
-                            title="Conscient Vista Arrozal"
-                            >Conscient Vista Arrozal</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="provident-adora-de-goa-chicalim-goa/index.html"
-                            target="_blank"
-                            title="Provident Adora De Goa"
-                            >Provident Adora De Goa</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gulf-of-goa-plots-the-house-of-abhinandan-lodha/index.html"
-                            target="_blank"
-                            title="Gulf Of Goa"
-                            >Gulf Of Goa</a
-                          >
-                        </li>
-                      </ul>
+                     <p>Conscient Elevate Residence launch date is ###.
+                     </p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-6"
                     >
-                      Top Property Searches
+                    What are the Conscient Elevate Residence sizes?
                     </div>
                     <div class="accordion-section-content" id="accordion-6">
-                      <ul>
-                        <li>
-                          <a
-                            href="projects-in-gurgaon.html"
-                            target="_blank"
-                            title="Projects in Gurgaon"
-                            >Luxury Projects in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-apartments-in-gurgaon.html"
-                            target="_blank"
-                            title="Apartments in Gurgaon"
-                            >Luxury Apartments in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-flats-in-gurgaon.html"
-                            target="_blank"
-                            title="Flats in Gurgaon"
-                            >Luxury Flats in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-duplexes-in-gurgaon.html"
-                            target="_blank"
-                            title="Duplexes in Gurgaon"
-                            >Luxury Duplexes in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-floors-in-gurgaon.html"
-                            target="_blank"
-                            title="Floors in Gurgaon"
-                            >Luxury Floors in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-homes-in-gurgaon.html"
-                            target="_blank"
-                            title="Homes in Gurgaon"
-                            >Luxury Homes in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-houses-in-gurgaon.html"
-                            target="_blank"
-                            title="Houses in Gurgaon"
-                            >Luxury Houses in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-penthouses-in-gurgaon.html"
-                            target="_blank"
-                            title="Penthouses in Gurgaon"
-                            >Luxury Penthouses in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-properties-in-gurgaon.html"
-                            target="_blank"
-                            title="Properties in Gurgaon"
-                            >Luxury Properties in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-villas-in-gurgaon.html"
-                            target="_blank"
-                            title="Villas in Gurgaon"
-                            >Luxury Villas in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/luxury-developers-in-gurgaon.html"
-                            target="_blank"
-                            title="Developers in Gurgaon"
-                            >Luxury Developers in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/m3m-projects-in-gurgaon.html"
-                            target="_blank"
-                            title="M3M Projects in Gurgaon"
-                            >M3M Projects in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/central-park-projects-in-gurgaon.html"
-                            target="_blank"
-                            title="Central Park Projects in Gurgaon"
-                            >Central Park Projects in Gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/3-bhk-flats-in-gurgaon.html"
-                            target="_blank"
-                            title="3 BHK Flats in gurgaon"
-                            >3 BHK Flats in gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gurgaon/dlf-independent-floors-in-gurgaon.html"
-                            target="_blank"
-                            title="DLF Independent Floors in gurgaon"
-                            >DLF Independent floors in gurgaon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/bungalow-in-bangalore.html"
-                            target="_blank"
-                            title="Bungalows in Bangalore"
-                            >Bungalows in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-apartments-in-hebbal.html"
-                            target="_blank"
-                            title="Apartments in Hebbal"
-                            >Luxury Apartments in Hebbal</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-flats-in-bangalore.html"
-                            target="_blank"
-                            title="Flats in Bangalore"
-                            >Luxury Flats in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-penthouses-in-bangalore.html"
-                            target="_blank"
-                            title="Penthouses in Bangalore"
-                            >Luxury Penthouses in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-projects-in-yelahanka.html"
-                            target="_blank"
-                            title="Projects in Yelahanka"
-                            >Luxury Projects in Yelahanka</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-villas-in-bangalore.html"
-                            target="_blank"
-                            title="Villas in Bangalore"
-                            >Luxury Villas in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-villas-in-devanahalli.html"
-                            target="_blank"
-                            title="Villas in Devanahalli"
-                            >Luxury Villas in Devanahalli</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/plots-in-bangalore.html"
-                            target="_blank"
-                            title="Plots in Bangalore"
-                            >Luxury Plots in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/ready-to-move-villas-in-bangalore.html"
-                            target="_blank"
-                            title="Ready to Move Villas in Bangalore"
-                            >Ready to Move Villas in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/villaments-in-bangalore.html"
-                            target="_blank"
-                            title="Villaments in Bangalore"
-                            >Villaments in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/villas-in-yelahanka.html"
-                            target="_blank"
-                            title="Villas in Yelahanka"
-                            >Luxury Villas in Yelahanka</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="projects-in-bangalore.html"
-                            target="_blank"
-                            title="Projects in Bangalore"
-                            >Luxury Projects in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/embassy-projects-in-bangalore.html"
-                            target="_blank"
-                            title="Embassy Projects Bangalore"
-                            >Embassy Projects Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/puravankara-projects-in-bangalore.html"
-                            target="_blank"
-                            title="Puravankara Projects in Bangalore"
-                            >Puravankara Projects in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/sobha-projects-in-bangalore.html"
-                            target="_blank"
-                            title="Sobha Projects in Bangalore"
-                            >Sobha Projects in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/century-projects-in-bangalore.html"
-                            target="_blank"
-                            title="Century Projects in Bangalore"
-                            >Century Projects in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="bangalore/luxury-apartments-in-bangalore.html"
-                            target="_blank"
-                            title="Luxury Apartments in Bangalore"
-                            >Luxury Apartments in Bangalore</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/duplexes-in-delhi.html"
-                            target="_blank"
-                            title="Duplexes in Delhi"
-                            >Luxury Duplexes in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-apartments-in-greater-kailash-delhi.html"
-                            target="_blank"
-                            title="Apartments in Greater Kailash"
-                            >Luxury Apartments in Greater Kailash</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-flats-in-delhi.html"
-                            target="_blank"
-                            title="Flats in Delhi"
-                            >Luxury Flats in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-houses-homes-in-delhi.html"
-                            target="_blank"
-                            title="Houses/Homes in Delhi"
-                            >Luxury Houses/Homes in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-projects-in-delhi.html"
-                            target="_blank"
-                            title="Projects in Delhi"
-                            >Luxury Projects in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-projects-in-greater-kailash-delhi.html"
-                            target="_blank"
-                            title="Projects in Greater Kailash"
-                            >Luxury Projects in Greater Kailash</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-properties-in-delhi.html"
-                            target="_blank"
-                            title="Properties in Delhi"
-                            >Luxury Properties in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-villas-in-greater-kailash-delhi.html"
-                            target="_blank"
-                            title="Villas in Greater Kailash"
-                            >Luxury Villas in Greater Kailash</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/penthouses-in-delhi.html"
-                            target="_blank"
-                            title="Penthouses in Delhi"
-                            >Luxury Penthouses in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/villa-in-delhi.html"
-                            target="_blank"
-                            title="Villas in Delhi"
-                            >Luxury Villas in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-apartments-in-delhi.html"
-                            target="_blank"
-                            title="Flats in Gurgaon"
-                            >Luxury Apartments in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/godrej-projects-in-delhi.html"
-                            target="_blank"
-                            title="Godrej Projects in Delhi"
-                            >Godrej Projects in Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="delhi/luxury-houses-homes-in-greater-kailash-delhi.html"
-                            target="_blank"
-                            title="Houses/Homes in Greater Kailash Delhi"
-                            >Houses/Homes in Greater Kailash Delhi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-apartments-in-noida.html"
-                            target="_blank"
-                            title="Apartments in Noida"
-                            >Luxury Apartments in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-duplexes-in-noida.html"
-                            target="_blank"
-                            title="Duplexes in Noida"
-                            >Luxury Duplexes in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="projects-in-noida.html"
-                            target="_blank"
-                            title="Projects in Noida"
-                            >Luxury Projects in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-penthouses-in-noida.html"
-                            target="_blank"
-                            title="Penthouses in Noida"
-                            >Luxury Penthouses in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-villas-in-noida.html"
-                            target="_blank"
-                            title="Villas in Noida"
-                            >Luxury Villas in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-flats-in-noida.html"
-                            target="_blank"
-                            title="Flats in Noida"
-                            >Luxury Flats in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-homes-in-noida.html"
-                            target="_blank"
-                            title="Homes in Noida"
-                            >Luxury Homes in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-houses-in-noida.html"
-                            target="_blank"
-                            title="Houses in Noida"
-                            >Luxury Houses in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="noida/luxury-properties-in-noida.html"
-                            target="_blank"
-                            title="Properties in Noida"
-                            >Luxury Properties in Noida</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pune/luxury-apartments-in-pune.html"
-                            target="_blank"
-                            title="Apartments in Pune"
-                            >Apartments in Pune</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pune/luxury-flats-in-pune.html"
-                            target="_blank"
-                            title="Flats in Pune"
-                            >Flats in Pune</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pune/luxury-houses-in-pune.html"
-                            target="_blank"
-                            title="Houses in Pune"
-                            >Houses in Pune</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pune/luxury-projects-in-pune.html"
-                            target="_blank"
-                            title="Projects in Pune"
-                            >Projects in Pune</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="pune/luxury-properties-in-pune.html"
-                            target="_blank"
-                            title="Properties in Pune"
-                            >Properties in Pune</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="dlf-residential-projects.html"
-                            target="_blank"
-                            title="DLF Residential Project"
-                            >DLF Residential Project</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="himachal-pradesh/luxury-flats-in-himachal-pradesh.html"
-                            target="_blank"
-                            title="Luxury Flats in Himachal Pradesh"
-                            >Luxury Flats in Himachal Pradesh</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="himachal-pradesh/luxury-floors-in-himachal-pradesh.html"
-                            target="_blank"
-                            title="Luxury Floors in Himachal Pradesh"
-                            >Luxury Floors in Himachal Pradesh</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="himachal-pradesh/luxury-homes-in-himachal-pradesh.html"
-                            target="_blank"
-                            title="Luxury Homes in Himachal Pradesh"
-                            >Luxury Homes in Himachal Pradesh</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="himachal-pradesh/luxury-properties-in-himachal-pradesh.html"
-                            target="_blank"
-                            title="Luxury Properties in Himachal Pradesh"
-                            >Luxury Properties in Himachal Pradesh</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="himachal-pradesh/projects-in-himachal-pradesh.html"
-                            target="_blank"
-                            title="Luxury Projects in Himachal Pradesh"
-                            >Luxury Projects in Himachal Pradesh</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-apartments-bandra-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Apartments in Bandra "
-                            >Luxury Apartments in Bandra</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-apartments-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Apartments in Mumbai"
-                            >Luxury Apartments in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-apartments-juhu-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Apartments in Juhu"
-                            >Luxury Apartments in Juhu
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-duplex-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Duplex in Mumbai"
-                            >Luxury Duplex in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-flats-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Flats in Mumbai"
-                            >Luxury Flats in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-penthouses-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Penthouses in Mumbai"
-                            >Luxury Penthouses in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-projects-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Projects Mumbai"
-                            >Luxury Projects in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-properties-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Properties in Mumbai"
-                            >Luxury Properties in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/rustomjee-projects-in-mumbai.html"
-                            target="_blank"
-                            title="Rustomjee Projects in Mumbai"
-                            >Rustomjee Projects in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/piramal-projects-in-mumbai.html"
-                            target="_blank"
-                            title="Piramal Projects in Mumbai"
-                            >Piramal Projects in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/lodha-projects-in-mumbai.html"
-                            target="_blank"
-                            title="Lodha Projects in Mumbai"
-                            >Lodha Projects in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-homes-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Homes in Mumbai"
-                            >Luxury Homes in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-developers-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Developers in Mumbai"
-                            >Luxury Developers in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-villas-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Villas in Mumbai"
-                            >Luxury Villas in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-houses-in-mumbai.html"
-                            target="_blank"
-                            title="Luxury Houses in Mumbai"
-                            >Luxury Houses in Mumbai</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="mumbai/luxury-apartments-in-south-mumbai.html"
-                            target="_blank"
-                            title="Luxury Apartments In South Mumbai"
-                            >Luxury Apartments In South Mumbai</a
-                          >
-                        </li>
-                      </ul>
+                    <p>Conscient Elevate Residence size starts from 7350 sq. ft.* onwards. To know more about the carpet area, super area, tower heights and loading, please visit our floor plans section or call ###.</p>
                     </div>
                   </div>
                 </div>
@@ -2322,386 +915,55 @@
                       class="accordion-section-title"
                       data-tab="#accordion-b-4"
                     >
-                      Noida Projects
+                    Is Conscient Elevate Residence a good investment?
                     </div>
                     <div class="accordion-section-content" id="accordion-b-4">
-                      <ul>
-                        <li>
-                          <a
-                            href="ats-knightsbridge-sector-124-noida/index.html"
-                            target="_blank"
-                            title="ATS Knightsbridge"
-                            >ATS Knightsbridge</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="kalpataru-vista-sector-128-noida/index.html"
-                            target="_blank"
-                            title="Kalpataru Vista"
-                            >Kalpataru Vista</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="ambience-tiverton-sector-50-noida/index.html"
-                            target="_blank"
-                            title="Ambience Tiverton"
-                            >Ambience Tiverton</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-golf-links-sector-27-greater-noida/index.html"
-                            target="_blank"
-                            title="Godrej Golf Links"
-                            >Godrej Golf Links</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="godrej-woods-sector-43-noida/index.html"
-                            target="_blank"
-                            title="Godrej Woods"
-                            >Godrej Woods</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="gulshan-dynasty-noida-sector-144-noida/index.html"
-                            target="_blank"
-                            title="Gulshan Dynasty"
-                            >Gulshan Dynasty</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="parx-laureate-sector-108-noida/index.html"
-                            target="_blank"
-                            title="Parx Laureate"
-                            >Parx Laureate</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="m3m-the-cullinan-sector-94-noida/index.html"
-                            target="_blank"
-                            title="M3M Cullinan"
-                            >M3M Cullinan</a
-                          >
-                        </li>
-                      </ul>
+                   <p>Conscient Elevate Residence holds strong investment potential due to factors like prime location, world-class amenities, and a developer's reputation, making it a favourable choice for investors. DLF Limited has a solid track record of delivering projects on time, ensuring trust and reliability for buyers.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-b-5"
                     >
-                      Himachal Pradesh Projects
+                    Is the Conscient Elevate Residence sample flat ready?
                     </div>
                     <div class="accordion-section-content" id="accordion-b-5">
-                      <ul>
-                        <li>
-                          <a
-                            href="dlf-samavana-kasauli-himachal-pradesh/index.html"
-                            target="_blank"
-                            title="DLF Samavana"
-                            >DLF Samavana</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="tata-housing-myst-kasauli-himachal-pradesh/index.html"
-                            target="_blank"
-                            title="Tata Myst"
-                            >Tata Myst</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="eldeco-terra-grande-sirmaur-near-kasauli-hp/index.html"
-                            target="_blank"
-                            title="Eldeco Terra Grande"
-                            >Eldeco Terra Grande</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="auramah-valley-naldehra-shimla-himachal-pradesh/index.html"
-                            target="_blank"
-                            title="Auramah Valley"
-                            >Auramah Valley</a
-                          >
-                        </li>
-                      </ul>
+                  <p>Yes, Conscient Elevate Residence model flat is ready for visit. To experience the quality standards and developer vision, please schedule your site visit today. You may also watch Conscient Elevate Residence walkthrough on our website.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-b-6"
                     >
-                      Mumbai Project
+                    What is Conscient Elevate Residence Latest News?
                     </div>
                     <div class="accordion-section-content" id="accordion-b-6">
-                      <ul>
-                        <li>
-                          <a
-                            href="rustomjee-cleon-bkc-mumbai/index.html"
-                            target="_blank"
-                            title="Rustomjee Cleon"
-                            >Rustomjee Cleon</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="rustomjee-seasons-bandra-bkc-mumbai/index.html"
-                            target="_blank"
-                            title="Rustomjee Seasons"
-                            >Rustomjee Seasons</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="rustomjee-crown-prabhadevi-mumbai/index.html"
-                            target="_blank"
-                            title="Rustomjee Crown"
-                            >Rustomjee Crown</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="rustomjee-parishram-bandra-pali-hill-mumbai/index.html"
-                            target="_blank"
-                            title="Rustomjee Parishram"
-                            >Rustomjee Parishram</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="rustomjee-ashiana-juhu-mumbai/index.html"
-                            target="_blank"
-                            title="Rustomjee Ashiana"
-                            >Rustomjee Ashiana</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="rustomjee-stella-bandra-east-mumbai/index.html"
-                            target="_blank"
-                            title="Rustomjee Stella"
-                            >Rustomjee Stella</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="lodha-bellevue-mahalaxmi-mumbai/index.html"
-                            target="_blank"
-                            title="Lodha Bellevue"
-                            >Lodha Bellevue</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="lodha-solitaire-mahalaxmi-mumbai/index.html"
-                            target="_blank"
-                            title="Lodha Solitaire"
-                            >Lodha Solitaire</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="piramal-aranya-byculla-east-mumbai/index.html"
-                            target="_blank"
-                            title="Piramal Aranya"
-                            >Piramal Aranya</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="piramal-mahalaxmi-jacob-circle-mumbai/index.html"
-                            target="_blank"
-                            title="Piramal Mahalaxmi"
-                            >Piramal Mahalaxmi</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="birla-niyaara-worli-mumbai/index.html"
-                            target="_blank"
-                            title="Birla Niyaara"
-                            >Birla Niyaara</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="lnt-the-gateway-sewri-mumbai/index.html"
-                            target="_blank"
-                            title="L&T The Gateway"
-                            >L&T The Gateway</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="prestige-jasdan-classic-mahalaxmi-mumbai/index.html"
-                            target="_blank"
-                            title="Prestige Jasdan Classic"
-                            >Prestige Jasdan Classic</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="shapoorji-pallonji-bkc-9-bandra-east-mumbai/index.html"
-                            target="_blank"
-                            title="Shapoorji Pallonji BKC 9"
-                            >Shapoorji Pallonji BKC 9</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="shapoorji-pallonji-minerva-mahalaxmi-mumbai/index.html"
-                            target="_blank"
-                            title="Shapoorji Pallonji Minerva"
-                            >Shapoorji Pallonji Minerva</a
-                          >
-                        </li>
-                      </ul>
+                    <p>Conscient Elevate Residence construction work is completed. To know more about the latest updates, please schedule your site visit today with our sales team by calling ###.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-b-7"
                     >
-                      Panchkula Projects
+                    What is the Conscient Elevate Residence possession date?
                     </div>
                     <div class="accordion-section-content" id="accordion-b-7">
-                      <ul>
-                        <li>
-                          <a
-                            href="dlf-the-valley-gardens-panchkula/index.html"
-                            target="_blank"
-                            title="DLF Valley Gardens"
-                            >DLF Valley Gardens</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="trident-hills-panchkula/index.html"
-                            target="_blank"
-                            title="Trident Hills"
-                            >Trident Hills</a
-                          >
-                        </li>
-                      </ul>
+                    <p>Conscient Elevate Residence completion date is December, ###. People are already living in this society.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-b-8"
                     >
-                      Top Best Developers in india
+                    Is there a resale unit in Conscient Elevate Residence?
                     </div>
                     <div class="accordion-section-content" id="accordion-b-8">
-                      <ul>
-                        <li>
-                          <a
-                            href="developer/embassy-group/index.html"
-                            target="_blank"
-                            title="Embassy Group"
-                            >Embassy Group</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/phoenix-mills/index.html"
-                            target="_blank"
-                            title="Phoenix Mills"
-                            >Phoenix Mills</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/puravankara-limited/index.html"
-                            target="_blank"
-                            title="Puravankara Group"
-                            >Puravankara Group</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/sobha-developer/index.html"
-                            target="_blank"
-                            title="Sobha"
-                            >Sobha Developer</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/century-real-estate/index.html"
-                            target="_blank"
-                            title="Century Real Estate"
-                            >Century Real Estate</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/divyasree-developer/index.html"
-                            target="_blank"
-                            title="DivyaSree Developer"
-                            >DivyaSree Developer</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/godrej-properties/index.html"
-                            target="_blank"
-                            title="Godrej Properties"
-                            >Godrej Properties</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/lnt-realty-developer/index.html"
-                            target="_blank"
-                            title="L&T Realty"
-                            >L&T Realty</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="developer/lodha-group/index.html"
-                            target="_blank"
-                            title="Lodha Group"
-                            >Lodha Group</a
-                          >
-                        </li>
-                      </ul>
+                   <p>Yes, Conscient Elevate Residence resale units are available. Feel free to get in touch with our dedicated resale team to inquire about the current resale price and availability of units on rent.</p>
                     </div>
                     <div
                       class="accordion-section-title"
                       data-tab="#accordion-b-9"
                     >
-                      Useful Links
+                    What are the Conscient Elevate Residence maintenance charges?
                     </div>
                     <div class="accordion-section-content" id="accordion-b-9">
-                      <ul>
-                        <li><a href="index.html" target="_blank">Home</a></li>
-                        <li>
-                          <a href="about.html" target="_blank">About Us</a>
-                        </li>
-                        <li>
-                          <a href="projects.html" target="_blank">Projects</a>
-                        </li>
-                        <li>
-                          <a href="contact.html" target="_blank">Contact</a>
-                        </li>
-                        <li>
-                          <a href="blog/index.html" target="_blank">Blogs</a>
-                        </li>
-                        <li>
-                          <a href="sitemap.html" target="_blank">Site-Map</a>
-                        </li>
-                        <li>
-                          <a href="privacy-policy.html" target="_blank"
-                            >Privacy Policy</a
-                          >
-                        </li>
-                      </ul>
+                     <p>Get in touch with our team to find out how much the project maintenance fee and other charges are.</p>
                     </div>
                   </div>
                 </div>
