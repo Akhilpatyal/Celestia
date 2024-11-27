@@ -22546,7 +22546,6 @@ img {
 
 .location-detail {
   text-align: center;
-  color: #a28261;
   border: 2px solid #fff;
   border-radius: 5px;
   padding: 20px;
@@ -22558,7 +22557,7 @@ img {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  background: linear-gradient(180deg, rgba(var(--primary-color-rgb), 0.4)0%, rgba(var(--primary-color-rgb), 0.4) 100%);
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .location-detail:hover {
@@ -22569,6 +22568,7 @@ img {
 }
 
 .location-detail h4 {
+  color: orange;
   margin: 0;
   font-size: 35px;
   font-weight: 600;
@@ -22580,6 +22580,7 @@ img {
 }
 
 .location-item h5 {
+   color: orange;
   font-size: 25px;
   font-family: poppinsregular;
 }
@@ -23031,10 +23032,7 @@ textarea.form-control {
 
 }
 
-/* about contact */
-/* .right_conatct_social_icon {
-  /* background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%); */
-/* } */ 
+
 
 .contact_us {
   background-color: #f1f1f1;
@@ -23385,7 +23383,7 @@ button.contact_form_submit {
   background: linear-gradient(45deg, #ff6600, #ff0000); /* Reverse gradient on hover */
   
  
-}
+} 
 
 .gradient-overlay {
   position: absolute;

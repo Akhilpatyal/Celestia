@@ -32,7 +32,7 @@
          var $document = $(document);
          var vscroll = 0;
 		 var header = jQuery("header.autoshow");
-         if ($document.scrollTop() >= 50 && vscroll === 0) {
+         if ($document.scrollTop()>= 50 && vscroll === 0) {
              header.removeClass("scrollOff");
              header.addClass("scrollOn");
              header.css("height", "auto");
