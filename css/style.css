@@ -23420,6 +23420,9 @@ button.contact_form_submit {
   #subheader .jarallax-img {
     height: 330.9px !important;
   }
+  .dot{
+    display:none;
+  }
 }
 /* navigation */
 #mainmenu li a:before {
@@ -23429,7 +23432,7 @@ button.contact_form_submit {
   left: 0;
   height: 3px;
   width: 0%;
-  background: #a28261;
+  background: orange;
   border-radius: 12px;
   transition: all 0.4s ease;
 }
@@ -23579,7 +23582,7 @@ ul li {
   font-weight: 800;
 }
 /* button animation */
-.elem{
+.elemt{
   width:35%; background-color:rgb(82, 207, 82);
   display: flex;
   align-items: center;
@@ -23593,12 +23596,12 @@ ul li {
   padding-top: 5px;
   cursor: pointer;
 }
-.elem p{
+.elemt p{
   color: #000;
   font-weight: 600;
   transition: all ease 0.5s;
 }
-.elem:hover p{
+.elemt:hover p{
   transform: translateY(-180%);
 }
 /* send button animation */
