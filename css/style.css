@@ -23020,26 +23020,6 @@ textarea.form-control {
     color: #fff;
   }
 }
-.contact_us {
-  background-image: url('');
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  background-attachment: fixed; /* Optional: Makes the background fixed for a parallax effect */
-  padding: 50px 0; /* Adjust padding for better spacing */
-  position: relative; /* For positioning child elements like overlays */
-}
-
-.contact_us::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5);   */
-  z-index: 1; /* Ensures it appears behind content */
-}
 
 .contact_us .container-fluid {
   position: relative;
@@ -23089,6 +23069,7 @@ textarea.form-control {
   border-radius: 0px;
   border: none;
   border-bottom: 1px solid #ccc;
+  color: #000;
 }
 
 .contact_field .form-control:focus {
@@ -23222,37 +23203,9 @@ button.contact_form_submit {
 .cursor:hover {
   cursor: pointer;
 }
-.modal-content {
-  background: none;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 15px;
-  /* padding: 20px; */
-  color: #fff;
-  position: relative;
-  object-fit: cover;
-}
-.modal-content img {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-}
-.modal-header {
-  border-bottom: none;
-}
 
-.btn-close {
-  background-color: #fff;
-  border-radius: 50%;
-}
 
-.modal-title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
+
 
 .form-control {
   background-color: rgba(245, 245, 245, 0.2);
@@ -23304,30 +23257,11 @@ button.contact_form_submit {
 }
 
 /* modal */
-.modal-content {
-  background: rgba(255, 255, 255, 0.1); /* Glass effect background */
-  backdrop-filter: blur(10px); /* Glassmorphism blur */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
-  border-radius: 15px;
-  padding: 20px;
-  position: relative;
-  overflow: hidden; /* Ensure nothing overflows */
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for elegance */
-}
 
-.modal-content img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures image fills the modal */
-  z-index: -1; /* Keeps the image behind other content */
-  filter: blur(8px) brightness(0.7); /* Blurred and darkened image */
-}
 
-.modal-header {
+
+
+/* .modal-header {
   border-bottom: none;
   color: #fff;
   text-align: center;
@@ -23337,7 +23271,7 @@ button.contact_form_submit {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
-}
+} */
 
 .btn-close {
   background-color: rgba(255, 255, 255, 0.5);
@@ -23639,4 +23573,199 @@ ul li {
   transition: background-image ease 0.5s;
   background-position: center;
   background-size: cover;
+}
+
+
+/* contact two
+ */
+ .modal-body {
+  padding: 0 !important;
+  padding: 0px !important;
+  display: flex;
+}
+.modal-content {
+  border-radius: 15px !important;
+  outline: 0;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.3);
+  background-color: #fff !important;
+  border: 0 !important;
+}
+
+.modal-content .mb-l {
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+  align-self: center !important;
+  margin-left: 10px;
+}
+
+.modal-content .mb-l img {
+  width: 100%;
+  height: 70vh;
+  vertical-align: top;
+}
+
+.modal-content .mb-r {
+  position: relative;
+  width: 50%;
+  padding: 23px 25px;
+  align-self: auto !important;
+}
+.modal-content .mb-r h2{
+  color:orange!important;
+}
+.modal-content .mb-r img {
+  height: 50px;
+}
+
+.modal-content .mb-r .m-call {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-color: orangered;
+  color: #fff;
+  border-radius: 0 0 15px 0;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal-content h2 {
+  font-weight: normal !important;
+  font-weight: 700 !important;
+  text-transform: capitalize;
+  font-size: 26px !important;
+  padding: 0 0 15px 0;
+  color: #21716e !important;
+  margin: 0 0 15px 0 !important;
+  line-height: normal;
+  position: relative;
+}
+
+.modal-content .mb-r h4 {
+  color: #fff !important;
+}
+
+.modal-body .close {
+  position: absolute;
+  z-index: 1;
+  right: -10px;
+  top: -10px;
+  font-size: 28px !important;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0px 0 rgba(255, 255, 255, 0);
+  opacity: 1;
+  margin: 0;
+  background-color: orange;
+  width: 39px;
+  height: 39px;
+  line-height: 39px !important;
+  border-radius: 50%;
+  border: solid 0px #fff !important;
+  outline: none !important;
+}
+
+.modal-body .close:hover,
+.modal-body.close:focus {
+  background-color: #000;
+  opacity: 1;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .modal-body {
+    padding: 0 !important;
+    padding: 0px !important;
+    display: block;
+  }
+
+  .modal-content .mb-l {
+    width: 100%;
+  }
+
+  .modal-content .mb-l img {
+    display: none;
+  }
+
+  .modal-content .mb-r {
+    width: 100%;
+    padding: 30px 30px 75px 30px;
+  }
+
+  .modal-body .close {
+    position: absolute;
+    z-index: 1;
+    right: -5px;
+    top: -5px;
+    font-size: 28px !important;
+    font-weight: 700;
+    text-shadow: 0 0px 0 rgba(255, 255, 255, 0);
+    opacity: 1;
+    margin: 0;
+    background-color: #85a128;
+    width: 39px;
+    height: 39px;
+    line-height: 39px !important;
+    border-radius: 50%;
+    border: solid 0px #fff !important;
+    outline: none !important;
+  }
+
+  .modal-body .close:hover,
+  .modal-body.close:focus {
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 992px) {
+  .modal-body {
+    padding: 0 !important;
+    padding: 0px !important;
+    display: block;
+  }
+
+  .modal-content .mb-l {
+    width: 100%;
+  }
+
+  .modal-content .mb-l img {
+    display: none;
+  }
+
+  .modal-content .mb-r {
+    width: 100%;
+    padding: 30px 30px 75px 30px;
+  }
+
+  .modal-body .close {
+    position: absolute;
+    z-index: 1;
+    right: -5px;
+    top: -5px;
+    font-size: 28px !important;
+    font-weight: 700;
+    text-shadow: 0 0px 0 rgba(255, 255, 255, 0);
+    opacity: 1;
+    margin: 0;
+    background-color: #85a128;
+    width: 39px;
+    height: 39px;
+    line-height: 39px !important;
+    border-radius: 50%;
+    border: solid 0px #fff !important;
+    outline: none !important;
+  }
+
+  .modal-body .close:hover,
+  .modal-body.close:focus {
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+  }
 }
