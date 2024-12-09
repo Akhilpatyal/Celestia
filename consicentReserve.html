@@ -961,10 +961,10 @@
       },
     });
   // model
-      setInterval(() => {
-        const modal = new bootstrap.Modal(document.getElementById('contactModal'));
-        modal.show();
-    }, 20000); // 10000 milliseconds = 10 seconds
+    // setInterval(() => {
+    //     const modal = new bootstrap.Modal(document.getElementById('contactModal'));
+    //     modal.show();
+    // }, 20000); // 10000 milliseconds = 10 seconds
     document.getElementById('contactModal').addEventListener('hidden.bs.modal', () => {
     const backdrops = document.querySelectorAll('.modal-backdrop');
     backdrops.forEach((backdrop) => backdrop.remove());

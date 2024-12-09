@@ -12206,7 +12206,7 @@ i.bg-color-secondary {
 /* marquee */
 
 .de-step-s1 {
-  overflow: ;
+  overflow:hidden ;
   position: relative;
   padding: 30px;
   height: 100%;
@@ -20807,7 +20807,7 @@ img {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 
@@ -22416,8 +22416,9 @@ img {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   width: auto;
-  height: auto;
+  height: 60vh;
 }
+
 
 #customers-testimonials .shadow-effect p {
   font-family: inherit;
@@ -22488,6 +22489,9 @@ img {
 
   .play-now {
     display: none;
+  }
+  .shadow-effect {
+    height: 80vh !important;
   }
 }
 
@@ -22895,7 +22899,7 @@ textarea.form-control {
 /* 2nd section images height */
 .img-height {
   /* height: !important; */
-  aspect-ratio: 8.5 / 10;
+  aspect-ratio: 7.5 / 8;
   object-fit: fill;
   image-rendering: pixelated;
 }
@@ -23092,7 +23096,7 @@ textarea.form-control {
   position: absolute;
   background-color: #2d2d2d;
   right: 1px;
-  top: 18%;
+  top: 24%;
   height: 340px;
   width: 340px;
   padding: 40px;
@@ -23398,8 +23402,9 @@ button.contact_form_submit {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 19px;
   width: 100%;
-  height: 96%;
+  /* height: 96%; */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.1),
@@ -23433,6 +23438,7 @@ button.contact_form_submit {
 .txtshadow {
   text-shadow: #ffffff 1px 0 10px;
 }
+
 
 #subheader .jarallax-img {
   height: 430.9px !important;
@@ -23495,10 +23501,11 @@ ul li {
 }
 
 .citymenu > li > a {
-  font-size: 17px !important;
-  /* padding-right: 3px; */
-  /* font-weight: var(--mainmenu-font-weight); */
-  font-weight: 700 !important;
+  font-size: 20px!important;
+  padding-right: 0px!important;
+    /* text-shadow: #ffffff 0.5px 0 10px; */
+
+  font-weight: 700!important;
 }
 .text-orange {
   background-color: #f78104;
