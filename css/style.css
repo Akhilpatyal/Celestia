@@ -1799,6 +1799,7 @@ footer {
 footer img {
   background-size: cover;
   background-position: center;
+  padding: 20px 0px;
 }
 
 .section-top img {
@@ -21358,7 +21359,9 @@ img {
 
   header.header-mobile #mainmenu li ul li {
     border: none;
-    padding-left: 40px;
+    padding:3px 0px;
+    font-weight: 600;
+        font-size: medium;
   }
 
   header.header-mobile #mainmenu li .mega li {
@@ -21390,6 +21393,7 @@ img {
 
   header.header-mobile #mainmenu ul li a {
     color: #ffffff;
+    text-align: center;
   }
 
   header.header-mobile #mainmenu ul.mega li a {
@@ -23000,6 +23004,7 @@ textarea.form-control {
 }
 
 .mission {
+margin: 16px 0px;
   animation: flowAnimation 3s infinite ease-in-out;
 }
 
@@ -23799,4 +23804,9 @@ ul li {
   .h-92{
     height:92vh;
   }
+}
+.view{
+  border: 1px solid #ff9c00;
+  padding: 6px 15px;
+  border-radius: 50px;
 }
