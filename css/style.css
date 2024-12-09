@@ -22409,14 +22409,14 @@ img {
 
 .shadow-effect {
   background: #fff;
-  padding: 20px;
+  padding: 20px 3px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid #ececec;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   width: auto;
-  height: 60vh;
+  height: 62vh;
 }
 
 
@@ -22490,9 +22490,9 @@ img {
   .play-now {
     display: none;
   }
-  .shadow-effect {
+  /* .shadow-effect {
     height: auto !important;
-  }
+  } */
 }
 
 #customers-testimonials .owl-item.active.center .item {
