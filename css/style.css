@@ -13424,7 +13424,8 @@ i.bg-color-secondary {
 }
 
 .fs-14 {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .fs-15 {
@@ -21423,7 +21424,7 @@ img {
     height: 36px;
     background: url(../images/ui/arrow-down-light.png) center no-repeat;
     position: absolute;
-    right: 0;
+    /* right: 35px; */
     margin-top: 10px;
     z-index: 1000;
     cursor: poInter;
@@ -22449,6 +22450,7 @@ img {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  width: 70vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -22490,9 +22492,24 @@ img {
   .play-now {
     display: none;
   }
-  /* .shadow-effect {
-    height: auto !important;
-  } */
+  .shadow-effect {
+    height: 50vh !important;
+  }
+   #customers-testimonials .shadow-effect p {
+    font-size: 22px;
+    margin: 20px 0px;
+    font-weight: 400;
+    text-align: center;
+}
+  #customers-testimonials .item{
+    width:auto;
+  }
+  .owl-carousel .owl-item img {
+    max-width: 110px;
+}
+.icon i{
+  padding:10px;
+}
 }
 
 #customers-testimonials .owl-item.active.center .item {
@@ -22613,7 +22630,7 @@ img {
 }
 
 .p-color {
-  color: #a28261;
+  color: #fcb061;
 }
 
 .form-footer .btn2 {
@@ -23775,5 +23792,11 @@ ul li {
     background-color: #000;
     opacity: 1;
     color: #fff;
+  }
+}
+@media screen and (min-width:728px) {
+  
+  .h-92{
+    height:92vh;
   }
 }
