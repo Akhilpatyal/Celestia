@@ -22490,9 +22490,9 @@ img {
   .play-now {
     display: none;
   }
-  /* .shadow-effect {
+  .shadow-effect {
     height: auto !important;
-  } */
+  }
 }
 
 #customers-testimonials .owl-item.active.center .item {
